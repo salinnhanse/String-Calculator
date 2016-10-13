@@ -43,4 +43,9 @@ public class CalculatorTest {
     public void testTallNumbers() {
     	assertEquals(2, Calculator.add("1001,2"));
     }
+
+    @Test
+    public void testDiffDelimiter() {
+    	assertEquals(3, Calculator.add("//;\n1;2"));
+    }
 }
