@@ -11,7 +11,7 @@ public class CalculatorTest {
 
     @Test
     public void testOneNumber() {
-    	assertEquals(42, Calculator.add("42"));
+    	assertEquals(1, Calculator.add("1"));
     }
 
     @Test
@@ -22,5 +22,10 @@ public class CalculatorTest {
     @Test
     public void testAnyNumbers() {
     	assertEquals(206, Calculator.add("23,1,58,38,2,52,32"));
+    }
+
+    @Test
+    public void testNewLine() {
+    	assertEquals(6, Calculator.add("1\n2,3"));
     }
 }
