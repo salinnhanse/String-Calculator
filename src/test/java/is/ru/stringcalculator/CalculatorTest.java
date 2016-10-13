@@ -38,4 +38,9 @@ public class CalculatorTest {
     		System.out.println(i);
     	}
     }
+
+    @Test
+    public void testTallNumbers() {
+    	assertEquals(2, Calculator.add("1001,2"));
+    }
 }
