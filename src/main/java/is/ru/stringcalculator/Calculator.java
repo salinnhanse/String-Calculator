@@ -18,8 +18,8 @@ public class Calculator {
     		}
     	}
     	text = text.replace("\n", delimiter);
-   		String[] numbs = text.split(delimiter);
-   		return numbs;
+	String[] numbs = text.split(delimiter);
+   	return numbs;
     }
 
     private static int sum(String text) {
